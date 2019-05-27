@@ -34,7 +34,6 @@ month_label = months_count > 1 || months_count == 0 ? "months" : "month"
 week_label = weeks_count > 1 || weeks_count == 0 ? "weeks" : "week"
 day_label = days_count > 1 || days_count == 0 ? "days" : "day"
 
-<<<<<<< HEAD
 puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 puts "🥳 You have been at ScaleFactor for #{initial_days_num} days! 🥳"
 puts ""
@@ -50,17 +49,3 @@ elsif initial_days_num > 7
 
 end
 puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-=======
-puts "You have been at ScaleFactor for #{initial_days_num} days! 🥳"
-
-if initial_days_num > 365
-  puts "That's #{years_count} #{year_label}, #{months_count} #{month_label}, #{weeks_count} #{week_label}, and #{days_count} #{day_label}!"
-
-elsif initial_days_num > 30
-  puts "That's #{months_count} #{month_label}, #{weeks_count} #{week_label}, and #{days_count} #{day_label}!"
-
-elsif initial_days_num > 7
-  puts "That's #{weeks_count} #{week_label}, and #{days_count} #{day_label}!"
-
-end
->>>>>>> 8fdff22d38706ea5eb8e164cd63276673214e650
