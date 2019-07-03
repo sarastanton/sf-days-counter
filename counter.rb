@@ -1,7 +1,6 @@
 #!/usr/bin/ruby
 
 require 'date'
-require 'active_support/inflector'
 
 start_date = Date.new(2019,4,16)
 
@@ -38,13 +37,13 @@ puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 puts "🥳 You have been at ScaleFactor for #{initial_days_num} days! 🥳"
 puts ""
 
-if initial_days_num > 365
+if initial_days_num >= 365
   puts "🎉 That's #{years_count} #{year_label}, #{months_count} #{month_label}, #{weeks_count} #{week_label}, and #{days_count} #{day_label}! 🎉"
 
-elsif initial_days_num > 30
+elsif initial_days_num >= 30
   puts "🎉 That's #{months_count} #{month_label}, #{weeks_count} #{week_label}, and #{days_count} #{day_label}! 🎉"
 
-elsif initial_days_num > 7
+elsif initial_days_num >= 7
   puts "🎉 That's #{weeks_count} #{week_label}, and #{days_count} #{day_label}! 🎉"
 
 end
